@@ -29,7 +29,7 @@ class Rental(models.Model):
 class Message(models.Model):
     message_id = models.AutoField(primary_key=True)
     sender = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="sender")
-    receiver = models.IntegerField() # Will pass Lister pk ID into this field. 
+    receiver = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="receiver")
     msg_content = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

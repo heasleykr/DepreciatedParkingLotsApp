@@ -108,7 +108,8 @@ def rent_Listing(request, listing_id):
             #create message object
             new_message = Message()
             new_message.sender = request.user
-            new_message.receiver = 12 #TODO: Update Models.
+            new_message.receiver = theOne.lister
+            #new_message.receiver = 12 #TODO: Update Models.
             new_message.msg_content = posted_Form.cleaned_data.get("comment")
 
             #create Rental Item

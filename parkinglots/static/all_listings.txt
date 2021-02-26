@@ -1,44 +1,48 @@
 {
     "0": {
-        "listing_id": 11,
+        "listing_id": 1,
         "lister_id": 1,
-        "title": "Buddy Rich Wisdom",
-        "description": "dfsdfsdfsdf",
+        "title": "Lovely Residential Parking",
+        "description": "Off-Street Parking near the stadium, short walk to downtown.  Driveway is paved and we welcome overnight parking for your vehicle!",
         "hourly_Rate": "8.00",
         "day_Rate": "50.00",
         "overNight": true,
-        "parking_Pass": true,
+        "parking_Pass": false,
         "meet_Renter": false,
         "vehicles": [
-            "C"
+            "C",
+            "T",
+            "V"
         ],
         "parking": [
             "R"
         ],
         "date": "2021-03-03",
         "time": "05:00:00",
-        "address_id": 17,
-        "images_id": 20
+        "is_Rented": false,
+        "address_id": 1,
+        "images_id": 1
     },
     "1": {
-        "listing_id": 12,
+        "listing_id": 2,
         "lister_id": 1,
-        "title": "Buddy Rich Wisdom",
-        "description": "this is the description I will try to display!!!",
-        "hourly_Rate": "8.00",
-        "day_Rate": "50.00",
+        "title": "Street Parking",
+        "description": "Street parking spot located in the heart of downtown!  Spot is near Starbucks and the spot is only big enough for compact vehicles. I have a parking pass you can hang from your mirror.",
+        "hourly_Rate": "5.00",
+        "day_Rate": "40.00",
         "overNight": true,
         "parking_Pass": true,
-        "meet_Renter": false,
+        "meet_Renter": true,
         "vehicles": [
             "C"
         ],
         "parking": [
-            "R"
+            "S"
         ],
         "date": "2021-03-03",
         "time": "05:00:00",
-        "address_id": 18,
-        "images_id": 21
+        "is_Rented": false,
+        "address_id": 2,
+        "images_id": 2
     }
 }

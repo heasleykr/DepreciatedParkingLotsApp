@@ -109,6 +109,9 @@ class Listing(models.Model):
     date = models.DateField(validators=[validate_date])
     time = models.TimeField()
 
+    #used for bookings
+    is_Rented = models.BooleanField(default=False)
+
     #foriegn key links
     address = models.ForeignKey(Address, on_delete=models.CASCADE)
     images = models.ForeignKey(Images, on_delete=models.CASCADE)
