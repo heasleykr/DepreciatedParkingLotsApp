@@ -1,0 +1,26 @@
+<!-- templates/listings.html -->
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}ParkingLots Listings{% endblock title %}
+
+
+{% block content %}
+    <div>
+        <h1>Listings In Your Area: </h1>
+        <hr />
+
+        <p><a class="btn btn-outline-light btn-lg" href="{% url 'map' %}" role="button">Map View</a></p>
+
+        <!--The div element for listings.js -->
+        <div id="listings"></div>
+
+    </div>
+  
+    {% block javascript %}
+        <script src="{% static 'listings.js' %}"></script>
+    {% endblock javascript %}
+  
+{% endblock content%}
